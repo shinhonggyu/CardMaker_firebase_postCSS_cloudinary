@@ -1,7 +1,8 @@
 import './App.css';
+import Login from './components/login/login';
 
-const App = () => {
-  return <h1>hi</h1>;
+const App = ({ authService }) => {
+  return <Login authService={authService} />;
 };
 
 export default App;
