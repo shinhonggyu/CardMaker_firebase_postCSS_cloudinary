@@ -5,6 +5,7 @@
   padding: 0.5em;
   background-color: makerGreen;
   position: relative;
+  text-align: center;
 }
 
 .logo {
@@ -21,10 +22,10 @@
   right: 3em;
   top: 1em;
   padding: 0.8em;
-  border-radius: 20%;
   background-color: makerBlack;
   color: makerWhite;
   outline: 0;
   border: 0;
   cursor: pointer;
+  border-radius: 20%;
 }
