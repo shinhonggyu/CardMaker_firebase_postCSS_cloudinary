@@ -3,12 +3,12 @@ import Button from '../button/button';
 import styles from './card_edit_form.module.css';
 
 const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
-  const nameRef = useRef();
-  const companyRef = useRef();
-  const themeRef = useRef();
-  const titleRef = useRef();
-  const emailRef = useRef();
-  const messageRef = useRef();
+  // const nameRef = useRef();
+  // const companyRef = useRef();
+  // const themeRef = useRef();
+  // const titleRef = useRef();
+  // const emailRef = useRef();
+  // const messageRef = useRef();
 
   const { name, company, title, email, message, theme, fileName } = card;
 
@@ -38,7 +38,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   return (
     <form className={styles.form}>
       <input
-        ref={nameRef}
+        // ref={nameRef}
         className={styles.input}
         type="text"
         name="name"
@@ -46,7 +46,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       />
       <input
-        ref={companyRef}
+        // ref={companyRef}
         className={styles.input}
         type="text"
         name="company"
@@ -54,7 +54,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       />
       <select
-        ref={themeRef}
+        // ref={themeRef}
         className={styles.select}
         name="theme"
         value={theme}
@@ -65,7 +65,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         <option value="colorful">colorful</option>
       </select>
       <input
-        ref={titleRef}
+        // ref={titleRef}
         className={styles.input}
         type="text"
         name="title"
@@ -73,7 +73,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       />
       <input
-        ref={emailRef}
+        // ref={emailRef}
         className={styles.input}
         type="text"
         name="email"
@@ -81,7 +81,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       />
       <textarea
-        ref={messageRef}
+        // ref={messageRef}
         className={styles.textarea}
         name="message"
         value={message}

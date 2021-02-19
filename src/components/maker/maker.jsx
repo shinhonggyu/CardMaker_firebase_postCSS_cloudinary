@@ -26,6 +26,16 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     return () => stopSync();
   }, [userId, cardRepository]);
 
+  // useEffect(() => {
+  //   authService.onAuthChange((user) => {
+  //     if (user) {
+  //       setUserId(user.uid);
+  //     } else {
+  //       history.push('/');
+  //     }
+  //   });
+  // }, [history, authService]);
+
   useEffect(() => {
     authService.onAuthChange((user) => {
       if (user) {
@@ -54,6 +64,7 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     cardRepository.removeCard(userId, card);
   };
 
+  console.log(cards);
   return (
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
